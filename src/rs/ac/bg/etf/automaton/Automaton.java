@@ -3,7 +3,7 @@ package rs.ac.bg.etf.automaton;
 
 
 public interface Automaton {
-    enum AutomatonType {ONEBIT, TWOBITS_TYPE1, TWOBITS_TYPE2, TWOBITS_TYPE3, TWOBITS_TYPE4}
+    enum AutomatonType {ONEBIT, TWOBITS_TYPE1, TWOBITS_TYPE2, TWOBITS_TYPE3, TWOBITS_TYPE4, THREEBITS_TYPE1}
 
     static Automaton instance(AutomatonType type) {
         switch (type) {
@@ -12,6 +12,7 @@ public interface Automaton {
             case TWOBITS_TYPE2: return new Automaton2bits_2();
             case TWOBITS_TYPE3: return new Automaton2bits_3();
             case TWOBITS_TYPE4: return new Automaton2bits_4();
+            case THREEBITS_TYPE1: return new Automaton3bits_1();
         }
         return null;
     }

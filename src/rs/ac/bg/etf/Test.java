@@ -6,6 +6,7 @@ import rs.ac.bg.etf.parser.Parser;
 import rs.ac.bg.etf.predictor.Instruction;
 import rs.ac.bg.etf.predictor.Predictor;
 import rs.ac.bg.etf.predictor.myPredictors.CorrelationPredictor;
+import rs.ac.bg.etf.predictor.myPredictors.TournamentPredictor;
 import rs.ac.bg.etf.predictor.myPredictors.TwoLevelPredictor;
 import rs.ac.bg.etf.predictor.myPredictors.gSharePredictor;
 import rs.ac.bg.etf.predictor.twoLevel.TwoLevel;
@@ -21,7 +22,8 @@ public class Test {
 
 		//Predictor predictor = new TwoLevelPredictor(10, Automaton.AutomatonType.TWOBITS_TYPE2);
 		//Predictor predictor = new CorrelationPredictor(10,3, Automaton.AutomatonType.TWOBITS_TYPE2);
-		Predictor predictor = new gSharePredictor(10, Automaton.AutomatonType.TWOBITS_TYPE2);
+		//Predictor predictor = new gSharePredictor(10, Automaton.AutomatonType.TWOBITS_TYPE2);
+		Predictor predictor = new TournamentPredictor(10, 10, 10, Automaton.AutomatonType.THREEBITS_TYPE1);
 //		Predictor predictor = new Bimodal(10,5,6, Automaton.AutomatonType.TWOBITS_TYPE3);
 
 		long start = System.currentTimeMillis();
