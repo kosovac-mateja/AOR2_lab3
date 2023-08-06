@@ -14,6 +14,6 @@ The following branch prediction algorithms are included in this project:
 
 The following automatons are included in this project:
 
-- 1-Bit Predictor
-- 2-Bit Predictors (4 types)
-- 3-Bit Automatons
+- 1-Bit Automaton
+- 2-Bit Automatons (4 types)
+- 3-Bit Automaton
